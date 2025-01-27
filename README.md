@@ -6,6 +6,8 @@ January 26, 2025
 ### Bikeshare Project Overview
 This Python project explores source data from Bikeshare rides and users in Chicago, New York City, and Washington, DC. The data was provided by **Udacity** as part of an assignment in the _Introduction to Progamming for Data Science_ course.
 
+This course is designed for newcomers to SQL, Python, Git, and GitHub. The project uses basic Python skills, with a few requirements that were more complicated for a novice like me!
+
 ### Description
 When run in Anaconda, miniconda, or a similar platform, the Python file asks the user to select certain parameters in order to explore the data. This includes selecting the city (from the list provided), the month (or all months), and the day (or all days). 
 
