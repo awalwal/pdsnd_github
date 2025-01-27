@@ -214,29 +214,28 @@ def user_stats(df):
     print('-'*40)
 
 
+def display_raw_data(df):
+    """Displays raw data on bikeshare users and their trips."""
+    # Create a variable to track the row index
+    x = 0
+    print("\nRaw Data Display Option")
+    print("NOTE: if you have filtered the data to a specific month and/or day, the displayed data\nwill skip rows to only show the data for the selected time period.")
+    # Determine if the user wants to see raw data on trips from the city selected
+    raw = input("\nWould you like to view individual trip data? Enter yes or no: ").lower()
+    pd.set_option('display.max_columns',200)
+    # Create a while loop with logic to determine if the data should be displayed and to increment the data shown
+    while True:
+        if raw == 'no':
+            break
+        elif raw == 'yes':
+            print(df.iloc[x:x + 5])
+            raw = input("\nWould you like to view more individual trip data? Enter yes or no: ").lower()
+            x += 5
+            continue
+        else:
+            raw = input("\nYour input is invalid. Please enter only 'yes' or 'no': ").lower()
+
 def main():
-    # Instructor recommendation to implement: move this function out of main()
-    def display_raw_data(df):
-        """Displays raw data on bikeshare users and their trips."""
-        # Create a variable to track the row index
-        x = 0
-        print("\nRaw Data Display Option")
-        print("NOTE: if you have filtered the data to a specific month and/or day, the displayed data\nwill skip rows to only show the data for the selected time period.")
-        # Determine if the user wants to see raw data on trips from the city selected
-        raw = input("\nWould you like to view individual trip data? Enter yes or no: ").lower()
-        pd.set_option('display.max_columns',200)
-        # Create a while loop with logic to determine if the data should be displayed and to increment the data shown
-        # Instructor recommendation: Add check for invalid entry (i.e. 'ye')
-        while True:
-            if raw == 'no':
-                break
-            elif raw == 'yes':
-                print(df.iloc[x:x + 5])
-                raw = input("\nWould you like to view more individual trip data? Enter yes or no: ").lower()
-                x += 5
-                continue
-            else:
-                raw = input("\nYour input is invalid. Please enter only 'yes' or 'no': ").lower()
     
     while True:
         city, month, day = get_filters()
