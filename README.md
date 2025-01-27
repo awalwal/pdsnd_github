@@ -1,17 +1,41 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
+# Welcome to my Bikeshare project!
 
 ### Date created
-Include the date you created this project and README file.
+January 26, 2025
 
-### Project Title
-Replace the Project Title
+### Bikeshare Project Overview
+This Python project explores source data from Bikeshare rides and users in Chicago, New York City, and Washington, DC. The data was provided by **Udacity** as part of an assignment in the _Introduction to Progamming for Data Science_ course.
 
 ### Description
-Describe what your project is about and what it does
+When run in Anaconda, miniconda, or a similar platform, the Python file asks the user to select certain parameters in order to explore the data. This includes selecting the city (from the list provided), the month (or all months), and the day (or all days). 
+
+Once the user has made these selections, the data is processed through a variety of filters to display interesting information, such as:
+- Most Frequent Times of Travel
+- Most Popular Stations and Trips
+- Trip Duration
+- Bikeshare User Demographics (where available)
+
+At the end of this display, the user has the option to display raw data on the rides from the city data selected. Once they are done displaying the data they wish to see, they can opt to restart the program or to exit.
+
+### Libraries used (in alphabetical order)
+
+- [NumPy](https://numpy.org/doc/stable/)
+- [Pandas](https://pandas.pydata.org/pandas-docs/stable/)
+- [Time](https://docs.python.org/3/library/time.html)
 
 ### Files used
-Include the files used
+
+- **bikeshare.py** (available within this GitHub repo)
+- chicago.csv _(not uploaded to GitHub due to filesize)_
+- new_york_city.csv _(not uploaded to GitHub due to filesize)_
+- washington.csv _(not uploaded to GitHub due to filesize)_
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+While creating this project, I consulted the following pages (in alphabetical order) for topics like `while loops`, `datetime format`, and `global variables`:
+
+- [Geeks For Geeks](https://www.geeksforgeeks.org/how-to-use-a-variable-from-another-function-in-python/)
+- [Stackoverflow.com](https://stackoverflow.com/questions/53086118/python-for-dummies-using-the-bakeshare-data)
+- [Tutorials Point](https://www.tutorialspoint.com/how-do-i-call-a-variable-from-another-function-in-python)
+- [W3School](https://www.w3schools.com/python/python_datetime.asp)
+
 
