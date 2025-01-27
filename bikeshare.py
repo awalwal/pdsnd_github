@@ -214,9 +214,7 @@ def user_stats(df):
     print('-'*40)
 
 
-def main():
-    
-    def display_raw_data(df):
+def display_raw_data(df):
         """Displays raw data on bikeshare users and their trips."""
         # Create a variable to track the row index
         x = 0
@@ -236,6 +234,8 @@ def main():
                 continue
             else:
                 raw = input("\nYour input is invalid. Please enter only 'yes' or 'no': ").lower()
+
+def main():
     
     while True:
         city, month, day = get_filters()
