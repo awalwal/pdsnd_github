@@ -215,7 +215,7 @@ def user_stats(df):
 
 
 def main():
-    
+    # Instructor recommendation to implement: move this function out of main()
     def display_raw_data(df):
         """Displays raw data on bikeshare users and their trips."""
         # Create a variable to track the row index
@@ -226,6 +226,7 @@ def main():
         raw = input("\nWould you like to view individual trip data? Enter yes or no: ").lower()
         pd.set_option('display.max_columns',200)
         # Create a while loop with logic to determine if the data should be displayed and to increment the data shown
+        # Instructor recommendation: Add check for invalid entry (i.e. 'ye')
         while True:
             if raw == 'no':
                 break
